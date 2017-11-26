@@ -1,0 +1,24 @@
+{
+  "name": "meart",
+  "version": "0.1.0",
+  "description": "a site builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meathill/electron-vue-code-sample.git"
+  },
+  "keywords": [
+    "site",
+    "builder",
+    "electron"
+  ],
+  "author": "Meathill <meathill@gmail.com> (http://meathill.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meathill/electron-vue-code-sample/issues"
+  },
+  "homepage": "https://github.com/meathill/electron-vue-code-sample#readme"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "electron-vue-sample-code-chapter-1",
+  "version": "0.1.0",
+  "description": "Sample code of 'Electron Vue', Chapter 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "node live-server",
+    "electron": "electron index.html"
+  },
+  "keywords": [
+    "electron",
+    "vue",
+    "todo-list"
+  ],
+  "author": "Meathill <meathill@gmail.com> (http://meathill.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "electron": "^1.7.9",
+    "font-awesome": "^4.7.0",
+    "vue": "^2.5.8"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

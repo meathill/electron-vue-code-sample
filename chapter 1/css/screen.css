@@ -1,0 +1,12 @@
+form {
+  margin-bottom: 1em;
+}
+
+.list-group label {
+  margin-bottom: 0;
+}
+
+.done .custom-control-description {
+  color: var(--gray);
+  text-decoration: line-through;
+}
