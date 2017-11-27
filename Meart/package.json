@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/meathill/electron-vue-code-sample/issues"
   },
-  "homepage": "https://github.com/meathill/electron-vue-code-sample#readme"
+  "homepage": "https://github.com/meathill/electron-vue-code-sample#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "electron": "^1.8.1",
+    "vue": "^2.5.8",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
 }
