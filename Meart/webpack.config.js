@@ -12,8 +12,32 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: 'raw-loader',
+        use: 'babel-loader',
       },
+      {
+        test: /\.vue$/,
+        use: 'vue-loader',
+        options: {
+          loaders: {
+            stylus: ExtractTextPlugin.extract('css-loader!stylus-loader'),
+            fallbackLoader: 'style-loader',
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          loader: 'css-loader',
+          fallbackLoader: 'style-loader',
+        }),
+      },
+      {
+        test: /\.styl$/,
+        loader: ExtractTextPlugin.extract({
+          loader: 'css-loader!stylus-loader',
+          fallbackLoader: 'style-loader',
+        }),
+      }
     ]
   },
   devtool: 'source-map',
@@ -25,5 +49,9 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin(dev),
+    new ExtractTextPlugin({
+      filename: '[name][hash].css',
+      allChunks: true,
+    }),
   ],
 };
